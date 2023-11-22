@@ -1,0 +1,556 @@
+/*
+Theme Name: プログラミングスクール テックアイエス
+*/
+/*この下からCSSを書いてください*/
+
+/* フォントの設定 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html, body {
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* 共通 */
+.common__sect-width {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.common__sect-width-narrow {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.common__border-sign {
+    height: 250px;
+    background-color: #D9D9D9;
+    margin-top: 50px;
+    border-radius: 50px;
+}
+
+.common__border-sign-img-div {
+    height: 200px;
+    text-align: center;
+}
+
+.common__border-sign-img-div img{
+    /* height: 100%; */
+    /* padding-top: 10px; */
+    width: 220px;
+}
+
+.common__border-sign p {
+    font-size: 32px;
+    text-align: center;
+}
+
+.common__button-div{
+    text-align: center;
+}
+.common__link-button {
+    display: inline-block;
+    margin-right: 0;
+    width: 500px;
+    font-size: 32px;
+    color: #fff;
+    padding: 38px 0;
+    border: 1px solid #830642;
+    background-color: #830642;
+    border-radius: 50px;
+}
+
+
+
+/* header */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height:  405px;
+    margin: 0 auto;
+    background-color: #fff;
+    width: 100%;
+}
+
+section.header__logo-div{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 200px;
+}
+
+div.header__logo-img-div{
+    width: 50%;
+    height: 100%;
+}
+
+div.header__logo-img-div > h1 {
+    height: 100%;
+}
+
+div.header__logo-img-div img{
+    width: 100%;
+}
+
+div.header__logo-phrase-div{
+    width: 50%;
+    background-color: #fff;
+}
+
+div.header__logo-phrase-div p {
+    font-size: 24px;
+}
+
+ul.header__button-list {
+    display: flex;
+    height: 200px;
+    background-color: #D9D9D9;
+    align-items: flex-end;
+}
+
+ul.header__button-list li {
+    width: 25%;
+    height: 90%;
+    
+}
+
+ul.header__button-list li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    color: #830642;
+    border-right: 1px solid #830642;
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 8vw;
+}
+
+ul.header__button-list li a:hover {
+    opacity: 0.3;
+    color: #0683A0;
+}
+
+ul.header__button-list li i {
+    font-size: 50%;
+}
+
+ul.header__button-list li a p {
+    font-size: 50%;
+    width: calc(100%-100px);
+}
+
+ul.header__button-list li:last-of-type a {
+    border: none;
+}
+
+ul.header__button-list li:nth-of-type(2) a p{
+    font-size: 30%;
+}
+
+ul.header__button-list li:last-of-type a p{
+    font-size: 20%;
+}
+
+/* header hamburger関連 */
+.header__hamburger, .hamburger {
+    display: none;
+}
+
+
+/* footer */
+section.footer__sec {
+    margin-top: 50px;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    background-color: #000;
+    
+}
+
+section.footer__sec p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 32px;
+}
+
+
+/* front-page */
+/* front-fv */
+section.front-fv {
+    margin-top: 450px;
+}
+div.front-fv__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 650px;
+}
+
+.front-fv__inner-img-div {
+    width: calc(100%-450px);
+    height: 100%;
+}
+
+.front-fv__inner-img-div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.front-fv__inner-img-div > p {
+    display: none;
+    visibility: hidden;
+}
+
+.front-fv__inner-p-div {
+    /* display: inline-block; */
+    background-color: blue;
+    height: 100%;
+    width: 450px;
+    overflow: hidden;
+    /* text-align: center; */
+}
+
+.front-fv__inner-p-div p {
+    display: inline-block;
+    font-size: 72px;
+    line-height: 144px;
+    color: #fff;
+    padding-top: 100px;
+    margin: 0 auto;
+    white-space: nowrap;
+}
+
+/* front-wanted */
+ul.front-wanted__wanted_list {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+li.front-wanted__wanted-card {
+    position:relative;
+	top:0;
+    width: 40%;
+    height: 500px;
+}
+
+li.front-wanted__wanted-card:hover {
+    top:-30px;
+    opacity: 0.5;
+    /*
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.5);
+    border: none;
+    background-color:rgba(255, 255, 255, 0);
+     */
+}
+
+div.front-wanted__wanted-card-img-div {
+    border: 1px solid #D9D9D9;
+    border-radius: 50px 50px 0 0;
+    height: 260px;
+}
+
+div.front-wanted__wanted-card-img-div img {
+    border-radius: 50px 50px 0 0;
+}
+
+div.front-wanted__wanted-card-p-div {
+    border: 1px solid #D9D9D9;
+    border-radius: 0 0 50px 50px;
+    height: 240px;
+}
+
+div.front-wanted__wanted-card-p-div p {
+    height: auto;
+    font-size: 32px;
+    padding: 32px;
+}
+
+/* front-event */
+
+ul.front-event__events-list {
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+li.front-event__event-card {
+}
+
+li.front-event__event-card a {
+    display: flex;
+    /* justify-content: space-between; */
+    font-size: 32px;
+    width: 100%;
+}
+
+li.front-event__event-card a:hover {
+    color: #fff;
+    background-color: #d9d9d9;
+    opacity: 0.5;
+    border-radius: 50px;
+}
+
+li.front-event__event-card a time {
+    width: 200px;
+}
+
+li.front-event__event-card a p {
+    /* margin-left:0; */
+    width: 800px;
+}
+
+/* front-donation */
+div.front-donation-p-div {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 32px;
+    color: #830642;
+    line-height: 72px;
+    margin-bottom: 160px;
+}
+
+/* front-query-and-trial */
+
+div.front-query-and-trial__button {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/* archive-cats-list */
+li.archive-cats-list_card {
+    margin-bottom: 32px;
+}
+
+/* archive-cats-list */
+section.archive-cats-list {
+    margin-top: 450px;
+}
+
+/* single-cat */
+
+section.single-cat {
+    margin-top: 450px;
+}
+div.single-cat__card {
+    width: 800px;
+    margin: 0 auto;
+    border: 1px solid #D9D9D9;
+    border-radius: 50px;
+}
+
+h2.single-cat__title {
+    /* margin-top: 30px; */
+    font-size: 48px;
+    width: 800px;
+    margin: 30px auto 0 auto;
+}
+
+div.single-cat__card img {
+    width: 100%;
+    border-radius: 50px 50px 0 0;
+}
+
+div.single-cat__card p:nth-of-type(1) {
+    padding-top: 32px;
+    padding-left: 32px;
+}
+
+div.single-cat__card p:nth-of-type(2){
+    padding-left: 32px;
+}
+
+div.single-cat__card p:nth-of-type(3){
+    padding-left: 32px;
+    padding-bottom: 32px;
+    padding-right: 32px;
+}
+
+/* ////////// */
+/* SmartPhone */
+/* ////////// */
+
+@media screen and (max-width: 760px) {
+/* header */
+    header {
+        height: 200px;
+    }
+
+    section.header__logo-div {
+        justify-content: space-between;
+    }
+    div.header__logo-phrase-div{
+        display: none;
+        visibility: hidden;
+    }
+
+    div.header__logo-img-div{
+        width: 90%;
+    }
+
+    div.header__logo-img-div h1 a img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    div.header__inner {        
+        position: relative;
+    }
+
+    nav.header__buttons-div {
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        transform: translateX(100%);
+        transition: ease .4s;
+    }
+
+    ul.header__button-list {
+        padding-top: 20vh;
+        flex-direction: column;
+        height: 100vh;
+        opacity: 0.9;
+        width: 100%;
+    }
+
+    ul.header__button-list li {
+        width: 100%;
+        height: 20vh;
+    }
+
+    ul.header__button-list li > a {
+        border-bottom: 1px solid #830642;
+        border-top:1px solid #830642;
+        border-right: none;
+        /* font-size: 10vh; */
+    }
+
+    ul.header__button-list li > a > i{
+        font-size: 6rem;
+    }
+    
+    ul.header__button-list li > a > p,
+    ul.header__button-list li > a > p:last-of-type{
+        font-size: 4rem;
+    }
+
+    /* ハンバーガーメニュー */
+    .header__hamburger {
+        width: 10%;
+        height: 100%;
+        display: block;
+    }
+
+    .hamburger {
+        background-color: transparent;
+        border-color: transparent;
+        z-index: 9999;
+        margin-right: 20px;
+    }
+
+    /* ハンバーガーメニューの線 */
+    .hamburger span {
+        width: 100%;
+        height: 1px;
+        background-color: #000;
+        position: relative;
+        transition: ease .4s;
+        display: block;
+    }
+
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+
+    .hamburger span:nth-child(2) {
+        margin: 8px 0;
+    }
+
+    .hamburger span:nth-child(3) {
+        top: 0;
+    }
+
+
+    /* ハンバーガーメニュークリック後のスタイル */
+    nav.header__buttons-div.active {
+        transform: translateX(0);
+    }
+
+    .hamburger.active span:nth-child(1) {
+        top: 5px;
+        transform: rotate(45deg);
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        top: -13px;
+        transform: rotate(-45deg);
+    }
+
+/* front */
+/* front-fv */
+    section.front-fv {
+        margin-top:200px;
+    }
+
+    div.front-fv__inner {
+        position: relative;
+    }
+    
+    div.front-fv__inner-p-div{
+        position:absolute;
+        top: 50%;
+        left: 65%;
+        transform: translateY(-50%);
+        opacity: 0.2;
+        width:35%;
+        font-size: 10vw;
+    }
+
+    div.front-fv__inner-p-div > p {
+        font-size: 70%;
+    }
+
+/* front-wanted */
+    ul.front-wanted__wanted_list{
+        display: block;
+        margin-top: 30px;
+    }
+    
+    li.front-wanted__wanted-card {
+        margin: 30px auto;
+        width: 90%;
+    }
+
+/* archive-cats-list */
+    section.archive-cats-list{
+        margin-top: 200px;
+    }
+
+/* single-cat */
+    section.single-cat {
+        margin-top: 200px;
+    }
+
+    div.single-cat__card {
+        width: 100%;
+    }
+
+
+
+    
+}
